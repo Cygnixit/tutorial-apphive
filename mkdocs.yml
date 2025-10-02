@@ -28,17 +28,16 @@ markdown_extensions:
   - pymdownx.tabbed
   - tables
 nav:
-  - Inicio: 00-introduccion.md
-  - Glosario: 05-glosario.md
-  - Ruta guiada (v3):
-      - Panorama: v3-00-ruta-guiada.md
-      - CRUD Clientes: v3-01-crud-clientes.md
-      - Auth & Sesiones: v3-02-auth-sesiones.md
-      - Pagos E2E: v3-03-pagos-flujo-completo.md
-      - Mapas y rutas: v3-04-mapas-rutas.md
-      - Push: v3-05-notificaciones-push.md
-      - Testing & QA: v3-06-testing-qa-extenso.md
-      - Deploy & CI: v3-07-deploy-ci.md
-      - Troubleshooting: v3-08-troubleshooting.md
-      - Ejercicios: v3-09-ejercicios.md
-      - Glosario ext.: v3-10-anexos-glosario-ext.md
+  - Caso completo (v4):
+      - Resumen: v4-00-resumen.md
+      - Onboarding de proveedores: v4-01-onboarding-proveedores.md
+      - Catálogo y búsqueda: v4-02-catalogo-busqueda.md
+      - Reservas y agenda: v4-03-reservas-agenda.md
+      - Chat y mensajería: v4-04-chat-mensajeria.md
+      - Mapas/logística: v4-05-mapas-logistica.md
+      - Pagos con split: v4-06-pagos-split.md
+      - Notificaciones: v4-07-notificaciones.md
+      - Panel admin/analítica: v4-08-admin-analytics.md
+      - Operación (SLO/Costos): v4-09-operacion-slo.md
+      - Troubleshooting ext.: v4-10-troubleshooting-ext.md
+      - Evaluación final: v4-11-evaluacion-final.md
