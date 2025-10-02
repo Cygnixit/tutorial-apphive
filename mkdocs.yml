@@ -1,3 +1,4 @@
+
 site_name: Apphive Mega Tutorial
 site_url: https://cygnixit.github.io/tutorial-apphive
 repo_url: https://github.com/Cygnixit/tutorial-apphive
@@ -29,47 +30,15 @@ markdown_extensions:
 nav:
   - Inicio: 00-introduccion.md
   - Glosario: 05-glosario.md
-  - Fundamentos:
-      - Fundamentos: 10-fundamentos.md
-      - Data Manager: 12-data-manager.md
-      - Navegación: 14-navegacion.md
-  - UI:
-      - Buttons: 20-ui-buttons.md
-      - Inputs: 20-ui-inputs.md
-      - Lists: 20-ui-lists.md
-      - Cards: 20-ui-cards.md
-      - Modals: 20-ui-modals.md
-      - Forms: 20-ui-forms.md
-      - Tabs: 20-ui-tabs.md
-      - Tables: 20-ui-tables.md
-      - Charts: 20-ui-charts.md
-      - Images: 20-ui-images.md
-      - Maps: 20-ui-maps.md
-  - Backend y APIs:
-      - APIs REST: 30-apis-rest.md
-      - Autenticación: 31-auth.md
-      - Geo & Mapas: 32-geo-mapas.md
-      - Storage: 33-storage.md
-  - Pagos:
-      - Intro: 42-pagos-intro.md
-      - Stripe avanzado: 43-stripe-avanzado.md
-      - Mercado Pago marketplace: 44-mercado-pago-marketplace.md
-      - Buenas prácticas: 45-pagos-buenas-practicas.md
-  - Operación:
-      - Build & Deploy: 50-build-deploy.md
-      - Estado global: 60-estado-global.md
-      - Offline & Retry: 62-offline-retry.md
-      - Roles y permisos: 64-roles-permisos.md
-      - Logging & auditoría: 66-logging-auditoria.md
-      - Modelado de datos: 67-modelado-datos.md
-      - Performance: 70-performance.md
-      - Analítica: 72-analitica-eventos.md
-      - i18n: 74-i18n.md
-      - Testing & QA: 76-test-qa.md
-      - Seguridad: 78-seguridad.md
-      - Versionado: 80-versionado.md
-      - SLO & Alertas: 82-slo-alertas.md
-      - Costos: 84-costos.md
-      - Facade: 86-facade.md
-      - Runbooks: 88-runbooks.md
-  - Índice maestro: 90-indice-maestro.md
+  - Ruta guiada (v3):
+      - Panorama: v3-00-ruta-guiada.md
+      - CRUD Clientes: v3-01-crud-clientes.md
+      - Auth & Sesiones: v3-02-auth-sesiones.md
+      - Pagos E2E: v3-03-pagos-flujo-completo.md
+      - Mapas y rutas: v3-04-mapas-rutas.md
+      - Push: v3-05-notificaciones-push.md
+      - Testing & QA: v3-06-testing-qa-extenso.md
+      - Deploy & CI: v3-07-deploy-ci.md
+      - Troubleshooting: v3-08-troubleshooting.md
+      - Ejercicios: v3-09-ejercicios.md
+      - Glosario ext.: v3-10-anexos-glosario-ext.md
