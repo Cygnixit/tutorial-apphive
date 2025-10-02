@@ -3,8 +3,8 @@
 Bienvenido, esta es la documentación **oficial** del mega tutorial.  
 Usa el menú de la izquierda para navegar o la barra de búsqueda arriba.
 
-!!! tip "Descarga en PDF"
-    Cuando el sitio esté publicado, podrás descargar el PDF automáticamente desde la sección de GitHub Pages.
+!!! tip "Descargar en PDF"
+    **[Descargar el PDF (auto-generado)](https://cygnixit.github.io/tutorial-apphive/Apphive_Mega_Tutorial.pdf)**
 
 ## ¿Qué encontrarás aquí?
 - Guías “clic por clic” para aprender Apphive desde cero.
