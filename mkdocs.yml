@@ -1,0 +1,31 @@
+site_name: Apphive Mega Tutorial
+site_url: https://example.github.io/apphive-mega-tutorial  # cámbialo después
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+  icon:
+    logo: material/book
+plugins:
+  - search
+  - with-pdf:
+      output_path: Apphive_Mega_Tutorial.pdf
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.tabbed
+  - tables
+nav:
+  - Inicio: index.md
+  - Empezar paso a paso: 00-empezar.md
+  - Fundamentos: 10-fundamentos.md
+  - UI avanzada: 20-ui-avanzada.md
