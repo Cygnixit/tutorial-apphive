@@ -1,0 +1,2025 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://cygnixit.github.io/tutorial-apphive/20-ui-forms/">
+      
+      
+        <link rel="prev" href="../20-ui-modals/">
+      
+      
+        <link rel="next" href="../20-ui-tabs/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+    
+    
+      
+        <title>Forms - Apphive Mega Tutorial</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2a3383ac.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ui-forms" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Apphive Mega Tutorial" class="md-header__button md-logo" aria-label="Apphive Mega Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Apphive Mega Tutorial
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Forms
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Cygnixit/tutorial-apphive" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Cygnixit/tutorial-apphive
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Apphive Mega Tutorial" class="md-nav__button md-logo" aria-label="Apphive Mega Tutorial" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Apphive Mega Tutorial
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Cygnixit/tutorial-apphive" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Cygnixit/tutorial-apphive
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00-introduccion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-glosario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glosario
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Fundamentos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Fundamentos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-fundamentos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fundamentos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-data-manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Manager
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-navegacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navegación
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    UI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            UI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-buttons/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Buttons
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-inputs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inputs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-lists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lists
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-cards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cards
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-modals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Forms
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forms
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configurar-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurar Forms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accesibilidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      Accesibilidad
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-tabs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tabs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-tables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tables
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-charts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Charts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Images
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-maps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Maps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Backend y APIs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Backend y APIs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30-apis-rest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    APIs REST
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../31-auth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Autenticación
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../32-geo-mapas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Geo & Mapas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../33-storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storage
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Pagos
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Pagos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../42-pagos-intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Intro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../43-stripe-avanzado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Stripe avanzado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../44-mercado-pago-marketplace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mercado Pago marketplace
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../45-pagos-buenas-practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Buenas prácticas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Operación
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Operación
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../50-build-deploy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Build & Deploy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../60-estado-global/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Estado global
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../62-offline-retry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Offline & Retry
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../64-roles-permisos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Roles y permisos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../66-logging-auditoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Logging & auditoría
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../67-modelado-datos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modelado de datos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../70-performance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Performance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../72-analitica-eventos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Analítica
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../74-i18n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    i18n
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../76-test-qa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Testing & QA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../78-seguridad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Seguridad
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../80-versionado/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Versionado
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../82-slo-alertas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SLO & Alertas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../84-costos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Costos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../86-facade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Facade
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../88-runbooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Runbooks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../90-indice-maestro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Índice maestro
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="ui-forms">UI — Forms</h1>
+<h2 id="configurar-forms">Configurar Forms</h2>
+<ol>
+<li>
+<p>Haz clic en <strong>Configurar Forms paso 1</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 1.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Configurar Forms paso 2</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 2.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Configurar Forms paso 3</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 3.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Configurar Forms paso 4</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 4.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Configurar Forms paso 5</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 5.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Configurar Forms paso 6</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 6.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Configurar Forms paso 7</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 7.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Configurar Forms paso 8</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 8.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Configurar Forms paso 9</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 9.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Configurar Forms paso 10</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 10.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Configurar Forms paso 11</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 11.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Configurar Forms paso 12</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 12.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Configurar Forms paso 13</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 13.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Configurar Forms paso 14</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 14.</li>
+</ul>
+</li>
+</ol>
+<h2 id="accesibilidad">Accesibilidad</h2>
+<ul>
+<li>Contraste AA</li>
+<li>Foco visible</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>C1</th>
+<th>C2</th>
+<th>C3</th>
+<th>C4</th>
+<th>C5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>r1c1</td>
+<td>r1c2</td>
+<td>r1c3</td>
+<td>r1c4</td>
+<td>r1c5</td>
+</tr>
+<tr>
+<td>r2c1</td>
+<td>r2c2</td>
+<td>r2c3</td>
+<td>r2c4</td>
+<td>r2c5</td>
+</tr>
+<tr>
+<td>r3c1</td>
+<td>r3c2</td>
+<td>r3c3</td>
+<td>r3c4</td>
+<td>r3c5</td>
+</tr>
+<tr>
+<td>r4c1</td>
+<td>r4c2</td>
+<td>r4c3</td>
+<td>r4c4</td>
+<td>r4c5</td>
+</tr>
+<tr>
+<td>r5c1</td>
+<td>r5c2</td>
+<td>r5c3</td>
+<td>r5c4</td>
+<td>r5c5</td>
+</tr>
+<tr>
+<td>r6c1</td>
+<td>r6c2</td>
+<td>r6c3</td>
+<td>r6c4</td>
+<td>r6c5</td>
+</tr>
+<tr>
+<td>r7c1</td>
+<td>r7c2</td>
+<td>r7c3</td>
+<td>r7c4</td>
+<td>r7c5</td>
+</tr>
+<tr>
+<td>r8c1</td>
+<td>r8c2</td>
+<td>r8c3</td>
+<td>r8c4</td>
+<td>r8c5</td>
+</tr>
+<tr>
+<td>r9c1</td>
+<td>r9c2</td>
+<td>r9c3</td>
+<td>r9c4</td>
+<td>r9c5</td>
+</tr>
+<tr>
+<td>r10c1</td>
+<td>r10c2</td>
+<td>r10c3</td>
+<td>r10c4</td>
+<td>r10c5</td>
+</tr>
+<tr>
+<td>r11c1</td>
+<td>r11c2</td>
+<td>r11c3</td>
+<td>r11c4</td>
+<td>r11c5</td>
+</tr>
+<tr>
+<td>r12c1</td>
+<td>r12c2</td>
+<td>r12c3</td>
+<td>r12c4</td>
+<td>r12c5</td>
+</tr>
+<tr>
+<td>r13c1</td>
+<td>r13c2</td>
+<td>r13c3</td>
+<td>r13c4</td>
+<td>r13c5</td>
+</tr>
+<tr>
+<td>r14c1</td>
+<td>r14c2</td>
+<td>r14c3</td>
+<td>r14c4</td>
+<td>r14c5</td>
+</tr>
+<tr>
+<td>r15c1</td>
+<td>r15c2</td>
+<td>r15c3</td>
+<td>r15c4</td>
+<td>r15c5</td>
+</tr>
+<tr>
+<td>r16c1</td>
+<td>r16c2</td>
+<td>r16c3</td>
+<td>r16c4</td>
+<td>r16c5</td>
+</tr>
+<tr>
+<td>r17c1</td>
+<td>r17c2</td>
+<td>r17c3</td>
+<td>r17c4</td>
+<td>r17c5</td>
+</tr>
+<tr>
+<td>r18c1</td>
+<td>r18c2</td>
+<td>r18c3</td>
+<td>r18c4</td>
+<td>r18c5</td>
+</tr>
+<tr>
+<td>r19c1</td>
+<td>r19c2</td>
+<td>r19c3</td>
+<td>r19c4</td>
+<td>r19c5</td>
+</tr>
+<tr>
+<td>r20c1</td>
+<td>r20c2</td>
+<td>r20c3</td>
+<td>r20c4</td>
+<td>r20c5</td>
+</tr>
+<tr>
+<td>r21c1</td>
+<td>r21c2</td>
+<td>r21c3</td>
+<td>r21c4</td>
+<td>r21c5</td>
+</tr>
+<tr>
+<td>r22c1</td>
+<td>r22c2</td>
+<td>r22c3</td>
+<td>r22c4</td>
+<td>r22c5</td>
+</tr>
+<tr>
+<td>r23c1</td>
+<td>r23c2</td>
+<td>r23c3</td>
+<td>r23c4</td>
+<td>r23c5</td>
+</tr>
+<tr>
+<td>r24c1</td>
+<td>r24c2</td>
+<td>r24c3</td>
+<td>r24c4</td>
+<td>r24c5</td>
+</tr>
+<tr>
+<td>r25c1</td>
+<td>r25c2</td>
+<td>r25c3</td>
+<td>r25c4</td>
+<td>r25c5</td>
+</tr>
+<tr>
+<td>r26c1</td>
+<td>r26c2</td>
+<td>r26c3</td>
+<td>r26c4</td>
+<td>r26c5</td>
+</tr>
+<tr>
+<td>r27c1</td>
+<td>r27c2</td>
+<td>r27c3</td>
+<td>r27c4</td>
+<td>r27c5</td>
+</tr>
+<tr>
+<td>r28c1</td>
+<td>r28c2</td>
+<td>r28c3</td>
+<td>r28c4</td>
+<td>r28c5</td>
+</tr>
+<tr>
+<td>r29c1</td>
+<td>r29c2</td>
+<td>r29c3</td>
+<td>r29c4</td>
+<td>r29c5</td>
+</tr>
+<tr>
+<td>r30c1</td>
+<td>r30c2</td>
+<td>r30c3</td>
+<td>r30c4</td>
+<td>r30c5</td>
+</tr>
+<tr>
+<td>r31c1</td>
+<td>r31c2</td>
+<td>r31c3</td>
+<td>r31c4</td>
+<td>r31c5</td>
+</tr>
+<tr>
+<td>r32c1</td>
+<td>r32c2</td>
+<td>r32c3</td>
+<td>r32c4</td>
+<td>r32c5</td>
+</tr>
+<tr>
+<td>r33c1</td>
+<td>r33c2</td>
+<td>r33c3</td>
+<td>r33c4</td>
+<td>r33c5</td>
+</tr>
+<tr>
+<td>r34c1</td>
+<td>r34c2</td>
+<td>r34c3</td>
+<td>r34c4</td>
+<td>r34c5</td>
+</tr>
+<tr>
+<td>r35c1</td>
+<td>r35c2</td>
+<td>r35c3</td>
+<td>r35c4</td>
+<td>r35c5</td>
+</tr>
+<tr>
+<td>r36c1</td>
+<td>r36c2</td>
+<td>r36c3</td>
+<td>r36c4</td>
+<td>r36c5</td>
+</tr>
+<tr>
+<td>r37c1</td>
+<td>r37c2</td>
+<td>r37c3</td>
+<td>r37c4</td>
+<td>r37c5</td>
+</tr>
+<tr>
+<td>r38c1</td>
+<td>r38c2</td>
+<td>r38c3</td>
+<td>r38c4</td>
+<td>r38c5</td>
+</tr>
+<tr>
+<td>r39c1</td>
+<td>r39c2</td>
+<td>r39c3</td>
+<td>r39c4</td>
+<td>r39c5</td>
+</tr>
+<tr>
+<td>r40c1</td>
+<td>r40c2</td>
+<td>r40c3</td>
+<td>r40c4</td>
+<td>r40c5</td>
+</tr>
+<tr>
+<td>r41c1</td>
+<td>r41c2</td>
+<td>r41c3</td>
+<td>r41c4</td>
+<td>r41c5</td>
+</tr>
+<tr>
+<td>r42c1</td>
+<td>r42c2</td>
+<td>r42c3</td>
+<td>r42c4</td>
+<td>r42c5</td>
+</tr>
+<tr>
+<td>r43c1</td>
+<td>r43c2</td>
+<td>r43c3</td>
+<td>r43c4</td>
+<td>r43c5</td>
+</tr>
+<tr>
+<td>r44c1</td>
+<td>r44c2</td>
+<td>r44c3</td>
+<td>r44c4</td>
+<td>r44c5</td>
+</tr>
+<tr>
+<td>r45c1</td>
+<td>r45c2</td>
+<td>r45c3</td>
+<td>r45c4</td>
+<td>r45c5</td>
+</tr>
+<tr>
+<td>r46c1</td>
+<td>r46c2</td>
+<td>r46c3</td>
+<td>r46c4</td>
+<td>r46c5</td>
+</tr>
+<tr>
+<td>r47c1</td>
+<td>r47c2</td>
+<td>r47c3</td>
+<td>r47c4</td>
+<td>r47c5</td>
+</tr>
+<tr>
+<td>r48c1</td>
+<td>r48c2</td>
+<td>r48c3</td>
+<td>r48c4</td>
+<td>r48c5</td>
+</tr>
+<tr>
+<td>r49c1</td>
+<td>r49c2</td>
+<td>r49c3</td>
+<td>r49c4</td>
+<td>r49c5</td>
+</tr>
+<tr>
+<td>r50c1</td>
+<td>r50c2</td>
+<td>r50c3</td>
+<td>r50c4</td>
+<td>r50c5</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ui-forms&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-10-02&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;requestId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;req-&lt;auto&gt;&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.expand", "toc.integrate", "content.code.copy", "search.suggest", "search.highlight", "content.tabs.link", "navigation.top"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

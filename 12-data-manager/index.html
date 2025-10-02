@@ -28,9 +28,6 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.2a3383ac.min.css">
       
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
-      
       
 
 
@@ -58,14 +55,7 @@
   </head>
   
   
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -74,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#data-manager-apis-rest-y-colecciones" class="md-skip">
+        <a href="#data-manager" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -116,32 +106,6 @@
         </div>
       </div>
     </div>
-    
-      
-        <form class="md-header__option" data-md-component="palette">
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
-      </label>
-    
-  
-</form>
-      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -422,27 +386,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#objetivo" class="md-nav__link">
+  <a href="#crear-fuente-users" class="md-nav__link">
     <span class="md-ellipsis">
-      Objetivo
+      Crear fuente 'Users'
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#flujo-ascii" class="md-nav__link">
+  <a href="#get-listusers" class="md-nav__link">
     <span class="md-ellipsis">
-      Flujo (ASCII)
+      GET listUsers
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pasos" class="md-nav__link">
+  <a href="#post-createuser" class="md-nav__link">
     <span class="md-ellipsis">
-      Pasos
+      POST createUser
     </span>
   </a>
   
@@ -539,12 +503,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../20-ui-avanzada/" class="md-nav__link">
+      <a href="../20-ui-buttons/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    UI avanzada
+    Buttons
     
   </span>
   
@@ -562,12 +526,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../22-estilos-temas/" class="md-nav__link">
+      <a href="../20-ui-inputs/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Estilos y temas
+    Inputs
     
   </span>
   
@@ -585,12 +549,196 @@
   
   
     <li class="md-nav__item">
-      <a href="../24-componentes-reusables/" class="md-nav__link">
+      <a href="../20-ui-lists/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Componentes reusables
+    Lists
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-cards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cards
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-modals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-forms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-tabs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tabs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-tables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tables
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-charts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Charts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Images
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-maps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Maps
     
   </span>
   
@@ -683,12 +831,58 @@
   
   
     <li class="md-nav__item">
+      <a href="../31-auth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Autenticación
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../32-geo-mapas/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Geo & Mapas
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../33-storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storage
     
   </span>
   
@@ -736,7 +930,7 @@
   
   
   <span class="md-ellipsis">
-    Comunicación y pagos
+    Pagos
     
   </span>
   
@@ -747,32 +941,9 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Comunicación y pagos
+            Pagos
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../40-push-notifications/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Push (intro)
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -786,7 +957,7 @@
   
   
   <span class="md-ellipsis">
-    Pagos (intro)
+    Intro
     
   </span>
   
@@ -804,7 +975,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../43-pagos-stripe-avanzado/" class="md-nav__link">
+      <a href="../43-stripe-avanzado/" class="md-nav__link">
         
   
   
@@ -855,7 +1026,7 @@
   
   
   <span class="md-ellipsis">
-    Pagos — buenas prácticas
+    Buenas prácticas
     
   </span>
   
@@ -1091,7 +1262,7 @@
   
   
   <span class="md-ellipsis">
-    Analítica de eventos
+    Analítica
     
   </span>
   
@@ -1155,7 +1326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../78-seguridad-hardening/" class="md-nav__link">
+      <a href="../78-seguridad/" class="md-nav__link">
         
   
   
@@ -1178,12 +1349,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../80-versionado-lanzamientos/" class="md-nav__link">
+      <a href="../80-versionado/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Versionado y lanzamientos
+    Versionado
     
   </span>
   
@@ -1206,7 +1377,7 @@
   
   
   <span class="md-ellipsis">
-    SLOs y alertas
+    SLO & Alertas
     
   </span>
   
@@ -1224,12 +1395,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../84-cost-guardrails/" class="md-nav__link">
+      <a href="../84-costos/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Guardrails de costo
+    Costos
     
   </span>
   
@@ -1247,12 +1418,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../86-integraciones-facade/" class="md-nav__link">
+      <a href="../86-facade/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Integraciones (facade)
+    Facade
     
   </span>
   
@@ -1270,12 +1441,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../88-runbooks-incidentes/" class="md-nav__link">
+      <a href="../88-runbooks/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Runbooks de incidentes
+    Runbooks
     
   </span>
   
@@ -1334,20 +1505,623 @@
   
 
 
-<h1 id="data-manager-apis-rest-y-colecciones">Data Manager (APIs REST y colecciones)</h1>
-<h2 id="objetivo">Objetivo</h2>
-<p>Conectar tu app a datos externos sin exponer secretos.</p>
-<h2 id="flujo-ascii">Flujo (ASCII)</h2>
-<div class="highlight"><pre><span></span><code>[Apphive UI] --(request)--&gt; [Backend propio] --(secret/API Key)--&gt; [Proveedor externo]
-</code></pre></div>
-<h2 id="pasos">Pasos</h2>
+<h1 id="data-manager">Data Manager</h1>
+<h2 id="crear-fuente-users">Crear fuente 'Users'</h2>
 <ol>
-<li>En tu backend crea un endpoint <code>/api/items</code> (GET/POST).</li>
-<li>En Apphive, en <strong>Data Manager</strong>, agrega una <strong>fuente</strong> llamada <code>Items</code> → URL de tu backend.</li>
-<li>Define <strong>acciones</strong>: <code>listItems</code>, <code>createItem</code>.</li>
-<li>En UI, enlaza un <strong>Repeater</strong> a <code>listItems</code> y un <strong>Form</strong> a <code>createItem</code>.</li>
-<li>Maneja estados: <strong>loading</strong>, <strong>error</strong>, <strong>empty</strong>.</li>
+<li>
+<p>Haz clic en <strong>Crear fuente 'Users' paso 1</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 1.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Crear fuente 'Users' paso 2</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 2.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Crear fuente 'Users' paso 3</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 3.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Crear fuente 'Users' paso 4</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 4.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Crear fuente 'Users' paso 5</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 5.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Crear fuente 'Users' paso 6</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 6.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Crear fuente 'Users' paso 7</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 7.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Crear fuente 'Users' paso 8</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 8.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Crear fuente 'Users' paso 9</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 9.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Crear fuente 'Users' paso 10</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 10.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Crear fuente 'Users' paso 11</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 11.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Crear fuente 'Users' paso 12</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 12.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Crear fuente 'Users' paso 13</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 13.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Crear fuente 'Users' paso 14</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 14.</li>
+</ul>
+</li>
 </ol>
+<h2 id="get-listusers">GET listUsers</h2>
+<ol>
+<li>
+<p>Haz clic en <strong>GET listUsers paso 1</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 1.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>GET listUsers paso 2</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 2.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>GET listUsers paso 3</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 3.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>GET listUsers paso 4</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 4.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>GET listUsers paso 5</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 5.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>GET listUsers paso 6</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 6.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>GET listUsers paso 7</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 7.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>GET listUsers paso 8</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 8.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>GET listUsers paso 9</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 9.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>GET listUsers paso 10</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 10.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>GET listUsers paso 11</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 11.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>GET listUsers paso 12</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 12.</li>
+</ul>
+</li>
+</ol>
+<h2 id="post-createuser">POST createUser</h2>
+<ol>
+<li>
+<p>Haz clic en <strong>POST createUser paso 1</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 1.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>POST createUser paso 2</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 2.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>POST createUser paso 3</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 3.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>POST createUser paso 4</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 4.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>POST createUser paso 5</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 5.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>POST createUser paso 6</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 6.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>POST createUser paso 7</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 7.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>POST createUser paso 8</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 8.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>POST createUser paso 9</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 9.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>POST createUser paso 10</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 10.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>POST createUser paso 11</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 11.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>POST createUser paso 12</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 12.</li>
+</ul>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;users.list&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-10-02&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;requestId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;req-&lt;auto&gt;&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ok&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<table>
+<thead>
+<tr>
+<th>C1</th>
+<th>C2</th>
+<th>C3</th>
+<th>C4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>r1c1</td>
+<td>r1c2</td>
+<td>r1c3</td>
+<td>r1c4</td>
+</tr>
+<tr>
+<td>r2c1</td>
+<td>r2c2</td>
+<td>r2c3</td>
+<td>r2c4</td>
+</tr>
+<tr>
+<td>r3c1</td>
+<td>r3c2</td>
+<td>r3c3</td>
+<td>r3c4</td>
+</tr>
+<tr>
+<td>r4c1</td>
+<td>r4c2</td>
+<td>r4c3</td>
+<td>r4c4</td>
+</tr>
+<tr>
+<td>r5c1</td>
+<td>r5c2</td>
+<td>r5c3</td>
+<td>r5c4</td>
+</tr>
+<tr>
+<td>r6c1</td>
+<td>r6c2</td>
+<td>r6c3</td>
+<td>r6c4</td>
+</tr>
+<tr>
+<td>r7c1</td>
+<td>r7c2</td>
+<td>r7c3</td>
+<td>r7c4</td>
+</tr>
+<tr>
+<td>r8c1</td>
+<td>r8c2</td>
+<td>r8c3</td>
+<td>r8c4</td>
+</tr>
+<tr>
+<td>r9c1</td>
+<td>r9c2</td>
+<td>r9c3</td>
+<td>r9c4</td>
+</tr>
+<tr>
+<td>r10c1</td>
+<td>r10c2</td>
+<td>r10c3</td>
+<td>r10c4</td>
+</tr>
+<tr>
+<td>r11c1</td>
+<td>r11c2</td>
+<td>r11c3</td>
+<td>r11c4</td>
+</tr>
+<tr>
+<td>r12c1</td>
+<td>r12c2</td>
+<td>r12c3</td>
+<td>r12c4</td>
+</tr>
+<tr>
+<td>r13c1</td>
+<td>r13c2</td>
+<td>r13c3</td>
+<td>r13c4</td>
+</tr>
+<tr>
+<td>r14c1</td>
+<td>r14c2</td>
+<td>r14c3</td>
+<td>r14c4</td>
+</tr>
+<tr>
+<td>r15c1</td>
+<td>r15c2</td>
+<td>r15c3</td>
+<td>r15c4</td>
+</tr>
+<tr>
+<td>r16c1</td>
+<td>r16c2</td>
+<td>r16c3</td>
+<td>r16c4</td>
+</tr>
+<tr>
+<td>r17c1</td>
+<td>r17c2</td>
+<td>r17c3</td>
+<td>r17c4</td>
+</tr>
+<tr>
+<td>r18c1</td>
+<td>r18c2</td>
+<td>r18c3</td>
+<td>r18c4</td>
+</tr>
+<tr>
+<td>r19c1</td>
+<td>r19c2</td>
+<td>r19c3</td>
+<td>r19c4</td>
+</tr>
+<tr>
+<td>r20c1</td>
+<td>r20c2</td>
+<td>r20c3</td>
+<td>r20c4</td>
+</tr>
+<tr>
+<td>r21c1</td>
+<td>r21c2</td>
+<td>r21c3</td>
+<td>r21c4</td>
+</tr>
+<tr>
+<td>r22c1</td>
+<td>r22c2</td>
+<td>r22c3</td>
+<td>r22c4</td>
+</tr>
+<tr>
+<td>r23c1</td>
+<td>r23c2</td>
+<td>r23c3</td>
+<td>r23c4</td>
+</tr>
+<tr>
+<td>r24c1</td>
+<td>r24c2</td>
+<td>r24c3</td>
+<td>r24c4</td>
+</tr>
+<tr>
+<td>r25c1</td>
+<td>r25c2</td>
+<td>r25c3</td>
+<td>r25c4</td>
+</tr>
+<tr>
+<td>r26c1</td>
+<td>r26c2</td>
+<td>r26c3</td>
+<td>r26c4</td>
+</tr>
+<tr>
+<td>r27c1</td>
+<td>r27c2</td>
+<td>r27c3</td>
+<td>r27c4</td>
+</tr>
+<tr>
+<td>r28c1</td>
+<td>r28c2</td>
+<td>r28c3</td>
+<td>r28c4</td>
+</tr>
+<tr>
+<td>r29c1</td>
+<td>r29c2</td>
+<td>r29c3</td>
+<td>r29c4</td>
+</tr>
+<tr>
+<td>r30c1</td>
+<td>r30c2</td>
+<td>r30c3</td>
+<td>r30c4</td>
+</tr>
+<tr>
+<td>r31c1</td>
+<td>r31c2</td>
+<td>r31c3</td>
+<td>r31c4</td>
+</tr>
+<tr>
+<td>r32c1</td>
+<td>r32c2</td>
+<td>r32c3</td>
+<td>r32c4</td>
+</tr>
+<tr>
+<td>r33c1</td>
+<td>r33c2</td>
+<td>r33c3</td>
+<td>r33c4</td>
+</tr>
+<tr>
+<td>r34c1</td>
+<td>r34c2</td>
+<td>r34c3</td>
+<td>r34c4</td>
+</tr>
+<tr>
+<td>r35c1</td>
+<td>r35c2</td>
+<td>r35c3</td>
+<td>r35c4</td>
+</tr>
+<tr>
+<td>r36c1</td>
+<td>r36c2</td>
+<td>r36c3</td>
+<td>r36c4</td>
+</tr>
+<tr>
+<td>r37c1</td>
+<td>r37c2</td>
+<td>r37c3</td>
+<td>r37c4</td>
+</tr>
+<tr>
+<td>r38c1</td>
+<td>r38c2</td>
+<td>r38c3</td>
+<td>r38c4</td>
+</tr>
+<tr>
+<td>r39c1</td>
+<td>r39c2</td>
+<td>r39c3</td>
+<td>r39c4</td>
+</tr>
+<tr>
+<td>r40c1</td>
+<td>r40c2</td>
+<td>r40c3</td>
+<td>r40c4</td>
+</tr>
+<tr>
+<td>r41c1</td>
+<td>r41c2</td>
+<td>r41c3</td>
+<td>r41c4</td>
+</tr>
+<tr>
+<td>r42c1</td>
+<td>r42c2</td>
+<td>r42c3</td>
+<td>r42c4</td>
+</tr>
+<tr>
+<td>r43c1</td>
+<td>r43c2</td>
+<td>r43c3</td>
+<td>r43c4</td>
+</tr>
+<tr>
+<td>r44c1</td>
+<td>r44c2</td>
+<td>r44c3</td>
+<td>r44c4</td>
+</tr>
+<tr>
+<td>r45c1</td>
+<td>r45c2</td>
+<td>r45c3</td>
+<td>r45c4</td>
+</tr>
+<tr>
+<td>r46c1</td>
+<td>r46c2</td>
+<td>r46c3</td>
+<td>r46c4</td>
+</tr>
+<tr>
+<td>r47c1</td>
+<td>r47c2</td>
+<td>r47c3</td>
+<td>r47c4</td>
+</tr>
+<tr>
+<td>r48c1</td>
+<td>r48c2</td>
+<td>r48c3</td>
+<td>r48c4</td>
+</tr>
+<tr>
+<td>r49c1</td>
+<td>r49c2</td>
+<td>r49c3</td>
+<td>r49c4</td>
+</tr>
+<tr>
+<td>r50c1</td>
+<td>r50c2</td>
+<td>r50c3</td>
+<td>r50c4</td>
+</tr>
+<tr>
+<td>r51c1</td>
+<td>r51c2</td>
+<td>r51c3</td>
+<td>r51c4</td>
+</tr>
+<tr>
+<td>r52c1</td>
+<td>r52c2</td>
+<td>r52c3</td>
+<td>r52c4</td>
+</tr>
+<tr>
+<td>r53c1</td>
+<td>r53c2</td>
+<td>r53c3</td>
+<td>r53c4</td>
+</tr>
+<tr>
+<td>r54c1</td>
+<td>r54c2</td>
+<td>r54c3</td>
+<td>r54c4</td>
+</tr>
+<tr>
+<td>r55c1</td>
+<td>r55c2</td>
+<td>r55c3</td>
+<td>r55c4</td>
+</tr>
+<tr>
+<td>r56c1</td>
+<td>r56c2</td>
+<td>r56c3</td>
+<td>r56c4</td>
+</tr>
+<tr>
+<td>r57c1</td>
+<td>r57c2</td>
+<td>r57c3</td>
+<td>r57c4</td>
+</tr>
+<tr>
+<td>r58c1</td>
+<td>r58c2</td>
+<td>r58c3</td>
+<td>r58c4</td>
+</tr>
+<tr>
+<td>r59c1</td>
+<td>r59c2</td>
+<td>r59c3</td>
+<td>r59c4</td>
+</tr>
+<tr>
+<td>r60c1</td>
+<td>r60c2</td>
+<td>r60c3</td>
+<td>r60c4</td>
+</tr>
+</tbody>
+</table>
 
 
 

@@ -11,10 +11,10 @@
         <link rel="canonical" href="https://cygnixit.github.io/tutorial-apphive/32-geo-mapas/">
       
       
-        <link rel="prev" href="../30-apis-rest/">
+        <link rel="prev" href="../31-auth/">
       
       
-        <link rel="next" href="../40-push-notifications/">
+        <link rel="next" href="../33-storage/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -27,9 +27,6 @@
     
     
       <link rel="stylesheet" href="../assets/stylesheets/main.2a3383ac.min.css">
-      
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -58,14 +55,7 @@
   </head>
   
   
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -74,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#geo-mapas-proxy-backend" class="md-skip">
+        <a href="#mapas-con-proxy" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -116,32 +106,6 @@
         </div>
       </div>
     </div>
-    
-      
-        <form class="md-header__option" data-md-component="palette">
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
-      </label>
-    
-  
-</form>
-      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -470,12 +434,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../20-ui-avanzada/" class="md-nav__link">
+      <a href="../20-ui-buttons/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    UI avanzada
+    Buttons
     
   </span>
   
@@ -493,12 +457,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../22-estilos-temas/" class="md-nav__link">
+      <a href="../20-ui-inputs/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Estilos y temas
+    Inputs
     
   </span>
   
@@ -516,12 +480,196 @@
   
   
     <li class="md-nav__item">
-      <a href="../24-componentes-reusables/" class="md-nav__link">
+      <a href="../20-ui-lists/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Componentes reusables
+    Lists
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-cards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cards
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-modals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modals
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-forms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forms
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-tabs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tabs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-tables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tables
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-charts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Charts
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-images/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Images
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-ui-maps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Maps
     
   </span>
   
@@ -611,6 +759,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../31-auth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Autenticación
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -664,18 +835,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#por-que-proxy" class="md-nav__link">
+  <a href="#autocomplete" class="md-nav__link">
     <span class="md-ellipsis">
-      Por qué proxy
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rutas-de-proxy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rutas de proxy
+      Autocomplete
     </span>
   </a>
   
@@ -685,6 +847,29 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../33-storage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storage
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -727,7 +912,7 @@
   
   
   <span class="md-ellipsis">
-    Comunicación y pagos
+    Pagos
     
   </span>
   
@@ -738,32 +923,9 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Comunicación y pagos
+            Pagos
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../40-push-notifications/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Push (intro)
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -777,7 +939,7 @@
   
   
   <span class="md-ellipsis">
-    Pagos (intro)
+    Intro
     
   </span>
   
@@ -795,7 +957,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../43-pagos-stripe-avanzado/" class="md-nav__link">
+      <a href="../43-stripe-avanzado/" class="md-nav__link">
         
   
   
@@ -846,7 +1008,7 @@
   
   
   <span class="md-ellipsis">
-    Pagos — buenas prácticas
+    Buenas prácticas
     
   </span>
   
@@ -1082,7 +1244,7 @@
   
   
   <span class="md-ellipsis">
-    Analítica de eventos
+    Analítica
     
   </span>
   
@@ -1146,7 +1308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../78-seguridad-hardening/" class="md-nav__link">
+      <a href="../78-seguridad/" class="md-nav__link">
         
   
   
@@ -1169,12 +1331,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../80-versionado-lanzamientos/" class="md-nav__link">
+      <a href="../80-versionado/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Versionado y lanzamientos
+    Versionado
     
   </span>
   
@@ -1197,7 +1359,7 @@
   
   
   <span class="md-ellipsis">
-    SLOs y alertas
+    SLO & Alertas
     
   </span>
   
@@ -1215,12 +1377,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../84-cost-guardrails/" class="md-nav__link">
+      <a href="../84-costos/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Guardrails de costo
+    Costos
     
   </span>
   
@@ -1238,12 +1400,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../86-integraciones-facade/" class="md-nav__link">
+      <a href="../86-facade/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Integraciones (facade)
+    Facade
     
   </span>
   
@@ -1261,12 +1423,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../88-runbooks-incidentes/" class="md-nav__link">
+      <a href="../88-runbooks/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Runbooks de incidentes
+    Runbooks
     
   </span>
   
@@ -1325,14 +1487,82 @@
   
 
 
-<h1 id="geo-mapas-proxy-backend">Geo &amp; Mapas (proxy backend)</h1>
-<h2 id="por-que-proxy">Por qué proxy</h2>
-<p>Para no exponer API Keys.</p>
-<h2 id="rutas-de-proxy">Rutas de proxy</h2>
-<div class="highlight"><pre><span></span><code>GET /maps/autocomplete?q=
-GET /maps/details?id=
-GET /maps/route?orig=...&amp;dest=...
-</code></pre></div>
+<h1 id="mapas-con-proxy">Mapas con proxy</h1>
+<h2 id="autocomplete">Autocomplete</h2>
+<ol>
+<li>
+<p>Haz clic en <strong>Autocomplete paso 1</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 1.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Autocomplete paso 2</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 2.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Autocomplete paso 3</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 3.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Autocomplete paso 4</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 4.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Autocomplete paso 5</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 5.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Autocomplete paso 6</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 6.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Autocomplete paso 7</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 7.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Autocomplete paso 8</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 8.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Autocomplete paso 9</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 9.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Autocomplete paso 10</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 10.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Autocomplete paso 11</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 11.</li>
+</ul>
+</li>
+<li>
+<p>Haz clic en <strong>Autocomplete paso 12</strong> → verifica el cambio.</p>
+<ul>
+<li>Tip: si algo falla, usa <em>Reload</em> y repite el paso 12.</li>
+</ul>
+</li>
+</ol>
 
 
 
