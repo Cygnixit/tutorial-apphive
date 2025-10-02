@@ -1,5 +1,8 @@
 site_name: Apphive Mega Tutorial
-site_url: https://example.github.io/apphive-mega-tutorial  # cámbialo después
+site_url: https://cygnixit.github.io/tutorial-apphive
+repo_url: https://github.com/Cygnixit/tutorial-apphive
+repo_name: Cygnixit/tutorial-apphive
+edit_uri: edit/main/docs/
 theme:
   name: material
   language: es
@@ -11,8 +14,16 @@ theme:
     - search.suggest
     - search.highlight
     - content.tabs.link
-  icon:
-    logo: material/book
+    - navigation.top
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Modo oscuro
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
 plugins:
   - search
   - with-pdf:
@@ -25,7 +36,40 @@ markdown_extensions:
   - pymdownx.tabbed
   - tables
 nav:
-  - Inicio: index.md
-  - Empezar paso a paso: 00-empezar.md
-  - Fundamentos: 10-fundamentos.md
-  - UI avanzada: 20-ui-avanzada.md
+  - Inicio: 00-introduccion.md
+  - Glosario: 05-glosario.md
+  - Fundamentos:
+      - Fundamentos: 10-fundamentos.md
+      - Data Manager: 12-data-manager.md
+      - Navegación: 14-navegacion.md
+  - UI:
+      - UI avanzada: 20-ui-avanzada.md
+      - Estilos y temas: 22-estilos-temas.md
+      - Componentes reusables: 24-componentes-reusables.md
+  - Backend y APIs:
+      - APIs REST: 30-apis-rest.md
+      - Geo & Mapas: 32-geo-mapas.md
+  - Comunicación y pagos:
+      - Push (intro): 40-push-notifications.md
+      - Pagos (intro): 42-pagos-intro.md
+      - Stripe avanzado: 43-pagos-stripe-avanzado.md
+      - Mercado Pago marketplace: 44-mercado-pago-marketplace.md
+      - Pagos — buenas prácticas: 45-pagos-buenas-practicas.md
+  - Operación:
+      - Build & Deploy: 50-build-deploy.md
+      - Estado global: 60-estado-global.md
+      - Offline & Retry: 62-offline-retry.md
+      - Roles y permisos: 64-roles-permisos.md
+      - Logging & auditoría: 66-logging-auditoria.md
+      - Modelado de datos: 67-modelado-datos.md
+      - Performance: 70-performance.md
+      - Analítica de eventos: 72-analitica-eventos.md
+      - i18n: 74-i18n.md
+      - Testing & QA: 76-test-qa.md
+      - Seguridad: 78-seguridad-hardening.md
+      - Versionado y lanzamientos: 80-versionado-lanzamientos.md
+      - SLOs y alertas: 82-slo-alertas.md
+      - Guardrails de costo: 84-cost-guardrails.md
+      - Integraciones (facade): 86-integraciones-facade.md
+      - Runbooks de incidentes: 88-runbooks-incidentes.md
+  - Índice maestro: 90-indice-maestro.md
