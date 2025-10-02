@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://cygnixit.github.io/tutorial-apphive/00-empezar/">
+        <link rel="canonical" href="https://cygnixit.github.io/tutorial-apphive/32-geo-mapas/">
       
       
+        <link rel="prev" href="../30-apis-rest/">
+      
+      
+        <link rel="next" href="../40-push-notifications/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Empezar paso a paso - Apphive Mega Tutorial</title>
+        <title>Geo & Mapas - Apphive Mega Tutorial</title>
       
     
     
@@ -70,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#empezar-paso-a-paso" class="md-skip">
+        <a href="#geo-mapas-proxy-backend" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -106,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Empezar paso a paso
+              Geo & Mapas
             
           </span>
         </div>
@@ -539,8 +543,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -551,13 +557,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -573,7 +577,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Backend y APIs
@@ -607,10 +611,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../32-geo-mapas/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Geo & Mapas
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -621,6 +647,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#por-que-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Por qué proxy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rutas-de-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rutas de proxy
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1261,16 +1325,14 @@
   
 
 
-<h1 id="empezar-paso-a-paso">Empezar paso a paso</h1>
-<ol>
-<li>Lee la sección <em>Fundamentos</em> para entender la estructura.</li>
-<li>Sigue las guías de UI y los ejemplos prácticos.</li>
-<li>Consulta el glosario si un término no te suena.</li>
-</ol>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Puedes editar cualquier página desde GitHub con el botón <strong>Edit this page</strong> (arriba a la derecha si activas <code>repo_url</code> en <code>mkdocs.yml</code>).</p>
-</div>
+<h1 id="geo-mapas-proxy-backend">Geo &amp; Mapas (proxy backend)</h1>
+<h2 id="por-que-proxy">Por qué proxy</h2>
+<p>Para no exponer API Keys.</p>
+<h2 id="rutas-de-proxy">Rutas de proxy</h2>
+<div class="highlight"><pre><span></span><code>GET /maps/autocomplete?q=
+GET /maps/details?id=
+GET /maps/route?orig=...&amp;dest=...
+</code></pre></div>
 
 
 

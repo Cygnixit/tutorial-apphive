@@ -1,19 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://example.github.io/apphive-mega-tutorial/</loc>
+         <loc>https://cygnixit.github.io/tutorial-apphive/</loc>
          <lastmod>2025-10-02</lastmod>
     </url>
     <url>
-         <loc>https://example.github.io/apphive-mega-tutorial/00-empezar/</loc>
+         <loc>https://cygnixit.github.io/tutorial-apphive/00-empezar/</loc>
          <lastmod>2025-10-02</lastmod>
     </url>
     <url>
-         <loc>https://example.github.io/apphive-mega-tutorial/10-fundamentos/</loc>
+         <loc>https://cygnixit.github.io/tutorial-apphive/00-introduccion/</loc>
          <lastmod>2025-10-02</lastmod>
     </url>
     <url>
-         <loc>https://example.github.io/apphive-mega-tutorial/20-ui-avanzada/</loc>
+         <loc>https://cygnixit.github.io/tutorial-apphive/05-glosario/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/10-fundamentos/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/12-data-manager/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/14-navegacion/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/20-ui-avanzada/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/22-estilos-temas/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/24-componentes-reusables/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/30-apis-rest/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/32-geo-mapas/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/40-push-notifications/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/42-pagos-intro/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/43-pagos-stripe-avanzado/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/44-mercado-pago-marketplace/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/45-pagos-buenas-practicas/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/50-build-deploy/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/60-estado-global/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/62-offline-retry/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/64-roles-permisos/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/66-logging-auditoria/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/67-modelado-datos/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/70-performance/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/72-analitica-eventos/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/74-i18n/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/76-test-qa/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/78-seguridad-hardening/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/80-versionado-lanzamientos/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/82-slo-alertas/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/84-cost-guardrails/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/86-integraciones-facade/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/88-runbooks-incidentes/</loc>
+         <lastmod>2025-10-02</lastmod>
+    </url>
+    <url>
+         <loc>https://cygnixit.github.io/tutorial-apphive/90-indice-maestro/</loc>
          <lastmod>2025-10-02</lastmod>
     </url>
 </urlset>
