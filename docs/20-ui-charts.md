@@ -1,54 +1,67 @@
-# Estilos y temas
+# UI — Charts
 
-## Definir paleta
+## Configurar Charts
 
-1. Haz clic en **Definir paleta paso 1** → verifica el cambio.
+1. Haz clic en **Configurar Charts paso 1** → verifica el cambio.
 
     - Tip: si algo falla, usa *Reload* y repite el paso 1.
 
-2. Haz clic en **Definir paleta paso 2** → verifica el cambio.
+2. Haz clic en **Configurar Charts paso 2** → verifica el cambio.
 
     - Tip: si algo falla, usa *Reload* y repite el paso 2.
 
-3. Haz clic en **Definir paleta paso 3** → verifica el cambio.
+3. Haz clic en **Configurar Charts paso 3** → verifica el cambio.
 
     - Tip: si algo falla, usa *Reload* y repite el paso 3.
 
-4. Haz clic en **Definir paleta paso 4** → verifica el cambio.
+4. Haz clic en **Configurar Charts paso 4** → verifica el cambio.
 
     - Tip: si algo falla, usa *Reload* y repite el paso 4.
 
-5. Haz clic en **Definir paleta paso 5** → verifica el cambio.
+5. Haz clic en **Configurar Charts paso 5** → verifica el cambio.
 
     - Tip: si algo falla, usa *Reload* y repite el paso 5.
 
-6. Haz clic en **Definir paleta paso 6** → verifica el cambio.
+6. Haz clic en **Configurar Charts paso 6** → verifica el cambio.
 
     - Tip: si algo falla, usa *Reload* y repite el paso 6.
 
-7. Haz clic en **Definir paleta paso 7** → verifica el cambio.
+7. Haz clic en **Configurar Charts paso 7** → verifica el cambio.
 
     - Tip: si algo falla, usa *Reload* y repite el paso 7.
 
-8. Haz clic en **Definir paleta paso 8** → verifica el cambio.
+8. Haz clic en **Configurar Charts paso 8** → verifica el cambio.
 
     - Tip: si algo falla, usa *Reload* y repite el paso 8.
 
-9. Haz clic en **Definir paleta paso 9** → verifica el cambio.
+9. Haz clic en **Configurar Charts paso 9** → verifica el cambio.
 
     - Tip: si algo falla, usa *Reload* y repite el paso 9.
 
-10. Haz clic en **Definir paleta paso 10** → verifica el cambio.
+10. Haz clic en **Configurar Charts paso 10** → verifica el cambio.
 
     - Tip: si algo falla, usa *Reload* y repite el paso 10.
 
-11. Haz clic en **Definir paleta paso 11** → verifica el cambio.
+11. Haz clic en **Configurar Charts paso 11** → verifica el cambio.
 
     - Tip: si algo falla, usa *Reload* y repite el paso 11.
 
-12. Haz clic en **Definir paleta paso 12** → verifica el cambio.
+12. Haz clic en **Configurar Charts paso 12** → verifica el cambio.
 
     - Tip: si algo falla, usa *Reload* y repite el paso 12.
+
+13. Haz clic en **Configurar Charts paso 13** → verifica el cambio.
+
+    - Tip: si algo falla, usa *Reload* y repite el paso 13.
+
+14. Haz clic en **Configurar Charts paso 14** → verifica el cambio.
+
+    - Tip: si algo falla, usa *Reload* y repite el paso 14.
+
+
+## Accesibilidad
+- Contraste AA
+- Foco visible
 
 
 | C1 | C2 | C3 | C4 | C5 |
@@ -93,3 +106,24 @@
 | r38c1 | r38c2 | r38c3 | r38c4 | r38c5 |
 | r39c1 | r39c2 | r39c3 | r39c4 | r39c5 |
 | r40c1 | r40c2 | r40c3 | r40c4 | r40c5 |
+| r41c1 | r41c2 | r41c3 | r41c4 | r41c5 |
+| r42c1 | r42c2 | r42c3 | r42c4 | r42c5 |
+| r43c1 | r43c2 | r43c3 | r43c4 | r43c5 |
+| r44c1 | r44c2 | r44c3 | r44c4 | r44c5 |
+| r45c1 | r45c2 | r45c3 | r45c4 | r45c5 |
+| r46c1 | r46c2 | r46c3 | r46c4 | r46c5 |
+| r47c1 | r47c2 | r47c3 | r47c4 | r47c5 |
+| r48c1 | r48c2 | r48c3 | r48c4 | r48c5 |
+| r49c1 | r49c2 | r49c3 | r49c4 | r49c5 |
+| r50c1 | r50c2 | r50c3 | r50c4 | r50c5 |
+
+
+
+```json
+{
+  "name": "ui-charts",
+  "date": "2025-10-02",
+  "requestId": "req-<auto>",
+  "status": "ok"
+}
+```
