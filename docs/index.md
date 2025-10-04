@@ -1,12 +1,10 @@
-# Apphive Mega Tutorial
+# Apphive — Curso Cero a Experto (DevITM)
 
-Bienvenido, esta es la documentación **oficial** del mega tutorial.  
-Usa el menú de la izquierda para navegar o la barra de búsqueda arriba.
+Bienvenido, esta documentación está construida a partir de la playlist **Aprende Apphive desde cero** (DevITM).  
+Cada capítulo incluye: guía paso a paso, flujos Mermaid, checklist y dataset con evidencias (timestamps).
 
-!!! tip "Descargar en PDF"
-    **[Descargar el PDF (auto-generado)](https://cygnixit.github.io/tutorial-apphive/Apphive_Mega_Tutorial.pdf)**
+> Sugerencia: usa el buscador (arriba) para localizar funciones como *Push Screen*, *Sign Up*, *Conditional*, etc.
 
-## ¿Qué encontrarás aquí?
-- Guías “clic por clic” para aprender Apphive desde cero.
-- Ejemplos, buenas prácticas y checklists.
-- Enlaces rápidos a secciones clave.
+## Estructura
+- **Lección 1**: Crea tu primer proyecto (registro, previewer, proyecto con múltiples apps)
+- Próximas lecciones: Editor, Estilos, Responsividad, Navegación, Variables, Lógica, Validaciones, Usuarios y más.

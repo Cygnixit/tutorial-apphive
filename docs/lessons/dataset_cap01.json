@@ -1,0 +1,24 @@
+[
+  {
+    "id": "definicion_apphive",
+    "claim": "Definición de Apphive como plataforma no-code.",
+    "quote": "Apphive es una plataforma web gratuita para crear aplicaciones móviles no code.",
+    "t": "00:11",
+    "link": "https://www.youtube.com/watch?v=uAXkxQkXQhk&t=11s"
+  },
+  {
+    "id": "drag_drop",
+    "claim": "Construcción drag and drop.",
+    "quote": "Con interfaces drag and drop, donde tú vas a estar arrastrando y soltando elementos en ella.",
+    "t": "00:35",
+    "link": "https://www.youtube.com/watch?v=uAXkxQkXQhk&t=35s"
+  },
+  {
+    "id": "start_without_template",
+    "action": "Start without template",
+    "why": "Aprender desde cero",
+    "ui_path": "Choose template > Start without template",
+    "t": "04:14",
+    "link": "https://www.youtube.com/watch?v=uAXkxQkXQhk&t=254s"
+  }
+]

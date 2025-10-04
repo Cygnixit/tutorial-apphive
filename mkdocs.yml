@@ -1,43 +1,24 @@
-
-site_name: Apphive Mega Tutorial
-site_url: https://cygnixit.github.io/tutorial-apphive
-repo_url: https://github.com/Cygnixit/tutorial-apphive
-repo_name: Cygnixit/tutorial-apphive
-edit_uri: edit/main/docs/
+site_name: Curso Apphive Cero a Experto (DevITM)
+site_url: https://example.com/
 theme:
   name: material
-  language: es
   features:
     - navigation.sections
-    - navigation.expand
-    - toc.integrate
     - content.code.copy
-    - search.suggest
     - search.highlight
-    - content.tabs.link
-    - navigation.top
-plugins:
-  - search
-  - with-pdf:
-      output_path: Apphive_Mega_Tutorial.pdf
+    - search.suggest
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-  - pymdownx.highlight
-  - pymdownx.tabbed
-  - tables
+  - toc:
+      permalink: true
 nav:
-  - Caso completo (v4):
-      - Resumen: v4-00-resumen.md
-      - Onboarding de proveedores: v4-01-onboarding-proveedores.md
-      - Catálogo y búsqueda: v4-02-catalogo-busqueda.md
-      - Reservas y agenda: v4-03-reservas-agenda.md
-      - Chat y mensajería: v4-04-chat-mensajeria.md
-      - Mapas/logística: v4-05-mapas-logistica.md
-      - Pagos con split: v4-06-pagos-split.md
-      - Notificaciones: v4-07-notificaciones.md
-      - Panel admin/analítica: v4-08-admin-analytics.md
-      - Operación (SLO/Costos): v4-09-operacion-slo.md
-      - Troubleshooting ext.: v4-10-troubleshooting-ext.md
-      - Evaluación final: v4-11-evaluacion-final.md
+  - Inicio: index.md
+  - Lección 1: 
+      - Guía: lessons/cap_01_proyecto.md
+      - Flujos de trabajo: lessons/flows_mermaid_cap01.md
+      - Checklist: lessons/checklist_cap01.csv
+      - Dataset: lessons/dataset_cap01.json
+  - Apéndices:
+      - Glosario: appendix_glossary.md
